@@ -1,0 +1,186 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #1a1a2e;
+}
+
+.conatiner {
+  background: #e0f7fa;
+  padding: 35px 45px;
+  border-radius: 15px;
+  box-shadow: 0 6px 35px rgba(0, 150, 136, 0.3);
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.conatiner:hover {
+  box-shadow: 0 10px 50px rgba(0, 96, 100, 0.6);
+}
+
+h1 {
+  color: #00796b;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-shadow: 1px 1px 3px #4db6ac;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+#usernameInput {
+  padding: 14px 20px;
+  font-size: 18px;
+  border: 2px solid #4db6ac;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.4s ease;
+  box-shadow: inset 0 2px 6px rgba(77, 182, 172, 0.2);
+}
+
+#usernameInput:focus {
+  border-color: #00796b;
+  box-shadow: 0 0 12px 4px rgba(0, 121, 107, 0.6);
+  background-color: #b2dfdb;
+}
+
+button {
+  padding: 13px 0;
+  background: linear-gradient(45deg, #4db6ac, #00796b);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(77, 182, 172, 0.5);
+  transition: background 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #00796b, #4db6ac);
+  box-shadow: 0 10px 25px rgba(0, 121, 107, 0.8);
+  transform: scale(1.05);
+}
+
+/* Profile Card */
+.profile-card {
+  background: #e0f2f1;
+  margin-top: 25px;
+  border-radius: 15px;
+  padding: 28px 30px;
+  box-shadow: 0 6px 20px rgba(0, 150, 136, 0.3);
+  text-align: center;
+  position: relative;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.profile-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 96, 100, 0.5);
+  transform: translateY(-5px);
+}
+
+.profile-card img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid #00796b;
+  object-fit: cover;
+  transition: border-color 0.4s ease;
+}
+
+.profile-card img:hover {
+  border-color: #4db6ac;
+}
+
+.profile-card h2 {
+  color: #004d40;
+  margin-bottom: 10px;
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px #4db6ac;
+}
+
+.profile-card p {
+  margin: 8px 0;
+  color: #00695c;
+  font-size: 16px;
+  line-height: 1.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+
+.profile-card p i {
+  color: #00796b;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.profile-card p:hover {
+  color: #004d40;
+}
+
+.profile-card p:hover i {
+  color: #004d40;
+}
+
+.profile-card p span {
+  font-weight: 600;
+  color: #00332b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .conatiner {
+    padding: 25px 20px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #usernameInput,
+  button {
+    font-size: 16px;
+  }
+
+  .profile-card {
+    padding: 20px;
+  }
+
+  .profile-card img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .profile-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-card p {
+    font-size: 14px;
+  }
+}
